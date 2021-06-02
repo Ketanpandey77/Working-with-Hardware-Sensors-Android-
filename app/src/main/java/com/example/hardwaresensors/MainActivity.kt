@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
         sensorManager = getSystemService<SensorManager>()!!
 
-        proximitySensor = sensorManager.getDefaultSensor(SensorManager.SENSOR_PROXIMITY)!!
+        proximitySensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY)!!
 
         sensorEventListener=object :SensorEventListener{
             override fun onSensorChanged(event: SensorEvent?) {
